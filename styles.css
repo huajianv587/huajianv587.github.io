@@ -130,6 +130,10 @@ canvas {
     margin-top: 2px;
 }
 
+.availability {
+    white-space: nowrap;
+}
+
 .profile-email {
     margin-top: 2px;
 }
