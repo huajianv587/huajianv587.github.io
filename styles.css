@@ -393,40 +393,39 @@ canvas {
     font-weight: 650;
 }
 
+.timeline-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
 .timeline-entry h3 span {
     color: var(--muted);
     font-weight: 500;
 }
 
-.timeline-company {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 5px;
-}
-
 .company-logo-link {
     display: flex;
-    flex: 0 0 152px;
+    flex: 0 0 auto;
     align-items: center;
     justify-content: flex-start;
-    width: 152px;
-    min-height: 44px;
+    width: 132px;
+    min-height: 40px;
 }
 
 .company-logo {
-    width: 152px;
-    height: 44px;
+    width: 132px;
+    height: 40px;
     object-fit: contain;
     object-position: left center;
 }
 
-.timeline-company h3 {
+.timeline-main {
     min-width: 0;
-    margin: 0;
 }
 
-.timeline-entry div > p,
+.timeline-main > p,
 .education-list article > p:last-child {
     margin: 0;
     font-size: 13px;
@@ -709,11 +708,11 @@ canvas {
         font-size: 11px;
     }
 
-    .timeline-company {
-        display: grid;
-        grid-template-columns: 108px minmax(0, 1fr);
+    .timeline-aside {
+        flex-direction: row;
         align-items: center;
-        gap: 10px;
+        justify-content: space-between;
+        gap: 12px;
     }
 
     .company-logo-link,
@@ -733,7 +732,7 @@ canvas {
         font-size: 14px;
     }
 
-    .timeline-entry div > p,
+    .timeline-main > p,
     .education-list article > p:last-child {
         font-size: 12px;
     }
@@ -786,11 +785,6 @@ canvas {
 
     .profile-info h1 {
         font-size: 20px;
-    }
-
-    .timeline-company {
-        grid-template-columns: 88px minmax(0, 1fr);
-        gap: 8px;
     }
 
     .company-logo-link,
