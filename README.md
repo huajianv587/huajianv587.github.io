@@ -1,6 +1,6 @@
 # Huajian Jiang - Personal Website
 
-An English-first, static portfolio with a compact academic-homepage layout inspired by guoxuxu.github.io. It uses plain HTML, CSS, and JavaScript with no build step or third-party runtime dependencies.
+An English-first, static portfolio with a compact academic-homepage layout inspired by guoxuxu.github.io. It uses plain HTML, CSS, and JavaScript with no build step or third-party runtime dependencies. Selected project entries can be temporarily hidden without deleting their source repositories.
 
 ## Preview
 
@@ -14,11 +14,13 @@ Then visit `http://127.0.0.1:4173`.
 
 ## Files
 
-- `index.html` - profile, selected projects, research, experience, education, and contact
+- `index.html` - profile, selected projects, algorithm research, experience, awards, and contact
 - `styles.css` - responsive layout and visual styling
 - `script.js` - local canvas illustrations
 - `assets/profile-photo.jpg` - optimized profile portrait provided by the owner
 - `assets/quant-platform.jpg` - project dashboard screenshot
+- `assets/huafeng-logo-dark.png` - Huafon Group logo sourced from its official website
+- `assets/niulanda-logo.webp` - Wenzhou Niulanda Machinery Technology logo sourced from its official website
 
 ## GitHub Pages
 

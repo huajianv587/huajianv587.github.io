@@ -151,16 +151,6 @@ canvas {
     text-decoration: none;
 }
 
-.profile-statement {
-    margin: 28px 0 25px;
-    padding: 0 0 0 18px;
-    border-left: 4px solid var(--blue);
-    color: #17181a;
-    font-size: 15px;
-    font-weight: 650;
-    line-height: 1.55;
-}
-
 .bio-heading,
 .content-section > h2,
 .section-heading h2 {
@@ -396,8 +386,7 @@ canvas {
     box-shadow: 0 7px 18px rgb(0 0 0 / 9%);
 }
 
-.timeline-date,
-.credential-date {
+.timeline-date {
     margin: 2px 0 0;
     color: var(--muted);
     font-size: 12px;
@@ -407,6 +396,34 @@ canvas {
 .timeline-entry h3 span {
     color: var(--muted);
     font-weight: 500;
+}
+
+.timeline-company {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 5px;
+}
+
+.company-logo-link {
+    display: flex;
+    flex: 0 0 152px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 152px;
+    min-height: 44px;
+}
+
+.company-logo {
+    width: 152px;
+    height: 44px;
+    object-fit: contain;
+    object-position: left center;
+}
+
+.timeline-company h3 {
+    min-width: 0;
+    margin: 0;
 }
 
 .timeline-entry div > p,
@@ -430,103 +447,62 @@ canvas {
     margin-top: 6px;
 }
 
-.credentials-grid {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 28px;
-    margin-top: 14px;
-    padding: 17px 18px;
-    border: 1px solid #e9e9eb;
-    border-radius: 8px;
-    background: var(--surface);
-    transition: transform 220ms ease, background-color 220ms ease, box-shadow 220ms ease;
-}
-
-.credentials-grid:hover,
-.credentials-grid:focus-within {
-    z-index: 1;
-    transform: translateY(-4px);
-    background: #fbfcff;
-    box-shadow: 0 7px 18px rgb(0 0 0 / 9%);
-}
-
-.education-list article + article {
-    margin-top: 16px;
-}
-
-.education-list h3 {
-    margin: 4px 0 2px;
-    font-size: 15px;
-}
-
-.awards-panel {
-    margin-top: 14px;
-    padding: 17px 18px;
-    border: 1px solid #e9e9eb;
-    border-radius: 8px;
-    background: var(--surface);
-    transition: transform 220ms ease, background-color 220ms ease, box-shadow 220ms ease;
-}
-
-.awards-panel:hover,
-.awards-panel:focus-within {
-    z-index: 1;
-    transform: translateY(-4px);
-    background: #fbfcff;
-    box-shadow: 0 7px 18px rgb(0 0 0 / 9%);
-}
-
 .awards-list {
     display: grid;
-    gap: 8px;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.award-entry {
+    position: relative;
+    min-width: 0;
+    padding: 16px 18px;
+    border: 1px solid #e9e9eb;
+    border-radius: 8px;
+    background: var(--surface);
+    transition: transform 220ms ease, background-color 220ms ease, box-shadow 220ms ease;
+}
+
+.award-entry:hover,
+.award-entry:focus-within {
+    z-index: 1;
+    transform: translateY(-4px);
+    background: #fbfcff;
+    box-shadow: 0 7px 18px rgb(0 0 0 / 9%);
+}
+
+.award-entry h3 {
+    margin: 0 0 7px;
+    color: #242529;
+    font-size: 16px;
+    font-weight: 680;
+    line-height: 1.4;
+}
+
+.award-entry h3 span {
+    display: block;
+    margin-top: 2px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.award-bullets {
+    display: grid;
+    gap: 5px;
+    max-width: 790px;
     margin: 0;
     padding-left: 19px;
 }
 
-.awards-list li {
+.award-bullets li {
     font-size: 13px;
     line-height: 1.6;
+    overflow-wrap: anywhere;
 }
 
-.toolkit-list {
-    padding-left: 20px;
-    border-left: 1px solid var(--line);
-}
-
-.toolkit-list p {
-    margin: 0;
-    font-size: 12.5px;
-    line-height: 1.6;
-}
-
-.toolkit-list p + p {
-    margin-top: 10px;
-}
-
-.skill-list {
-    margin: 0;
-    padding-left: 19px;
-}
-
-.skill-list li {
-    font-size: 12.5px;
-    line-height: 1.6;
-}
-
-.skill-list li + li {
-    margin-top: 10px;
-}
-
-.toolkit-list .skill-list strong {
-    display: inline;
-    margin-right: 4px;
-}
-
-.toolkit-list strong {
-    display: block;
+.award-bullets strong {
     color: var(--ink);
-    font-size: 12px;
 }
 
 .site-footer {
@@ -639,12 +615,6 @@ canvas {
         font-size: 12px;
     }
 
-    .profile-statement {
-        margin: 19px 0 18px;
-        padding-left: 12px;
-        font-size: 13px;
-    }
-
     .bio-heading,
     .content-section > h2,
     .section-heading h2 {
@@ -735,9 +705,28 @@ canvas {
         padding: 12px;
     }
 
-    .timeline-date,
-    .credential-date {
+    .timeline-date {
         font-size: 11px;
+    }
+
+    .timeline-company {
+        display: grid;
+        grid-template-columns: 108px minmax(0, 1fr);
+        align-items: center;
+        gap: 10px;
+    }
+
+    .company-logo-link,
+    .company-logo {
+        width: 108px;
+    }
+
+    .company-logo-link {
+        min-height: 36px;
+    }
+
+    .company-logo {
+        height: 36px;
     }
 
     .timeline-entry h3 {
@@ -762,31 +751,19 @@ canvas {
         margin-top: 7px;
     }
 
-    .credentials-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
+    .award-entry {
         padding: 13px;
     }
 
-    .awards-panel {
-        padding: 13px;
+    .award-entry h3 {
+        font-size: 14px;
     }
 
-    .toolkit-list {
-        padding: 13px 0 0;
-        border-top: 1px solid var(--line);
-        border-left: 0;
-    }
-
-    .skill-list {
+    .award-bullets {
         padding-left: 17px;
     }
 
-    .skill-list li {
-        font-size: 12px;
-    }
-
-    .awards-list li {
+    .award-bullets li {
         font-size: 12px;
     }
 
@@ -811,6 +788,20 @@ canvas {
         font-size: 20px;
     }
 
+    .timeline-company {
+        grid-template-columns: 88px minmax(0, 1fr);
+        gap: 8px;
+    }
+
+    .company-logo-link,
+    .company-logo {
+        width: 88px;
+    }
+
+    .company-logo {
+        height: 32px;
+    }
+
     .project-entry {
         grid-template-columns: 78px minmax(0, 1fr);
         gap: 9px;
@@ -821,8 +812,7 @@ canvas {
 @media (prefers-reduced-motion: reduce) {
     .project-entry,
     .timeline-entry,
-    .credentials-grid,
-    .awards-panel {
+    .award-entry {
         transition: none;
     }
 
@@ -830,13 +820,8 @@ canvas {
     .project-entry:focus-within,
     .timeline-entry:hover,
     .timeline-entry:focus-within,
-    .credentials-grid:hover,
-    .credentials-grid:focus-within {
-        transform: none;
-    }
-
-    .awards-panel:hover,
-    .awards-panel:focus-within {
+    .award-entry:hover,
+    .award-entry:focus-within {
         transform: none;
     }
 }
