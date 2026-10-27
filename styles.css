@@ -280,6 +280,12 @@ canvas {
     object-fit: cover;
 }
 
+.research-illustration {
+    object-fit: contain !important;
+    object-position: center;
+    background: #f1f5f9;
+}
+
 .project-copy {
     min-width: 0;
 }
@@ -491,9 +497,22 @@ canvas {
     height: 100%;
 }
 
+.award-thumb a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .award-thumb img {
     object-fit: cover;
     transition: transform 240ms ease;
+}
+
+.award-thumb img.award-certificate {
+    object-fit: contain;
+    object-position: center;
+    padding: 3px;
+    background: #ffffff;
 }
 
 .award-thumb a:hover img,

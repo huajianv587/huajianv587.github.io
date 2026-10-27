@@ -10,7 +10,7 @@
     <meta property="og:type" content="website">
     <title>Huajian Jiang | AI Algorithm &amp; Agent Development Engineer</title>
     <link rel="icon" href="assets/profile-photo.jpg" type="image/jpeg">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20261027">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -36,56 +36,6 @@
             <h2 class="bio-heading">About</h2>
             <p class="bio-copy">I hold a Master of Computing in Applied Artificial Intelligence from Nanyang Technological University, having graduated in October 2026. I came to AI after 5+ years in data analytics and international trade, where I worked with real suppliers, contracts, and customs workflows and learned what production data and real operations look like. My work includes a multi-agent RAG system for ESG research and an LLM-driven clinical workflow pipeline, spanning speech-to-text and medical consultation, built during an industry internship.</p>
             <p class="bio-copy">I focus on the engineering that makes AI trustworthy in practice: traceable data lineage, failure handling, reproducible evaluation, and a clear line between a working prototype and a production-ready system. I also hold the CFA Institute ESG Investing Certificate and am particularly interested in AI for finance and sustainability.</p>
-        </section>
-
-        <section class="content-section" id="work" aria-labelledby="work-title">
-            <div class="section-heading">
-                <div>
-                    <p class="section-kicker">Built systems</p>
-                    <h2 id="work-title">Selected Projects</h2>
-                </div>
-                <a class="section-link" href="https://github.com/huajianv587" target="_blank" rel="noreferrer">View all on GitHub <span aria-hidden="true">&#8594;</span></a>
-            </div>
-
-            <div class="project-list">
-                <article class="project-entry project-featured project-spotlight">
-                    <figure class="project-thumb">
-                        <canvas class="visual-canvas" data-visual="ar" width="900" height="560" role="img" aria-label="Diagram of facial landmarks, wearable signals, and on-device AI routing"></canvas>
-                    </figure>
-                    <div class="project-copy">
-                        <p class="project-meta">Flagship project <span>NTU Pinnacle finalist</span></p>
-                        <h3>SymFace: AR &amp; Biometric AI App</h3>
-                        <p>An end-to-end iOS/watchOS wellness system integrating ARKit TrueDepth 3D tracking, 100+ facial landmarks, HealthKit context, and a hybrid AI engine routing between Apple Foundation Models and cloud LLMs.</p>
-                        <p class="project-proof">On-device-first biometric workflow · privacy-aware AI routing · NTU Pinnacle Finalist</p>
-                        <p class="project-note">A flagship applied-AI prototype rather than a clinically validated product; source code is not currently public.</p>
-                        <p class="project-stack">SwiftUI · ARKit · HealthKit · Apple Foundation Models</p>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-
-        <section class="content-section" id="research" aria-labelledby="research-title">
-            <div class="section-heading">
-                <div>
-                    <p class="section-kicker">Selected research</p>
-                    <h2 id="research-title">Algorithm Research</h2>
-                </div>
-            </div>
-            <div class="project-list">
-                <article class="project-entry">
-                    <figure class="project-thumb">
-                        <img src="assets/esg-docqa-architecture.svg" alt="ESG-DocQA architecture: ESG disclosures become human-reviewed question and evidence pairs, pass through controlled retrieval, and produce answers linked to sources." width="900" height="560" loading="lazy">
-                    </figure>
-                    <div class="project-copy">
-                        <p class="project-meta">First Author <span>Mar-Aug 2026</span></p>
-                        <h3>ESG-DocQA: A Human-Reviewed Benchmark and Controlled Retrieval Evaluation</h3>
-                        <p>Research on long-context retrieval evaluation for complex financial disclosures, with human review and controlled evidence comparisons.</p>
-                        <p class="publication-status">Accepted for publication in the International Journal of Document Analysis and Recognition (IJDAR), a Springer SCIE-indexed journal.</p>
-                    </div>
-                </article>
-
-            </div>
         </section>
 
         <section class="content-section" id="experience" aria-labelledby="experience-title">
@@ -127,73 +77,123 @@
             </div>
         </section>
 
+        <section class="content-section" id="work" aria-labelledby="work-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">Built systems</p>
+                    <h2 id="work-title">Project</h2>
+                </div>
+                <a class="section-link" href="https://github.com/huajianv587" target="_blank" rel="noreferrer">View all on GitHub <span aria-hidden="true">&#8594;</span></a>
+            </div>
+
+            <div class="project-list">
+                <article class="project-entry project-featured project-spotlight">
+                    <figure class="project-thumb">
+                        <canvas class="visual-canvas" data-visual="ar" width="900" height="560" role="img" aria-label="Diagram of facial landmarks, wearable signals, and on-device AI routing"></canvas>
+                    </figure>
+                    <div class="project-copy">
+                        <p class="project-meta">Flagship project <span>NTU Pinnacle finalist</span></p>
+                        <h3>SymFace: AR &amp; Biometric AI App</h3>
+                        <p>An end-to-end iOS/watchOS wellness system integrating ARKit TrueDepth 3D tracking, 100+ facial landmarks, HealthKit context, and a hybrid AI engine routing between Apple Foundation Models and cloud LLMs.</p>
+                        <p class="project-proof">On-device-first biometric workflow · privacy-aware AI routing · NTU Pinnacle Finalist</p>
+                        <p class="project-note">A flagship applied-AI prototype rather than a clinically validated product; source code is not currently public.</p>
+                        <p class="project-stack">SwiftUI · ARKit · HealthKit · Apple Foundation Models</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="content-section" id="research" aria-labelledby="research-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">Selected research</p>
+                    <h2 id="research-title">Algorithm Research</h2>
+                </div>
+            </div>
+            <div class="project-list">
+                <article class="project-entry">
+                    <figure class="project-thumb">
+                        <img class="research-illustration" src="assets/esg-docqa-retrieval-pipeline.png" alt="Report retrieval methodology: report-local pool, question-only query, three retrieval methods, gold-page ranking, retrieval metrics, and downstream analysis." width="1536" height="1024" loading="lazy">
+                    </figure>
+                    <div class="project-copy">
+                        <p class="project-meta">First Author <span>Mar-Aug 2026</span></p>
+                        <h3>ESG-DocQA: A Human-Reviewed Benchmark and Controlled Retrieval Evaluation</h3>
+                        <p>Research on long-context retrieval evaluation for complex financial disclosures, with human review and controlled evidence comparisons.</p>
+                        <p class="publication-status">Accepted for publication in the International Journal of Document Analysis and Recognition (IJDAR), a Springer SCIE-indexed journal.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
         <section class="content-section awards-section" id="awards" aria-labelledby="awards-title">
             <h2 id="awards-title">Algorithm Awards</h2>
             <div class="awards-list">
                 <article class="award-entry">
                     <figure class="award-thumb">
-                        <a href="https://www.kaggle.com/competitions/ariel-data-challenge-2024" target="_blank" rel="noreferrer" aria-label="View NeurIPS Ariel Data Challenge 2024 on Kaggle">
-                            <img src="assets/award-ariel.jpg" alt="Ariel Data Challenge artwork showing an exoplanet and telescope signal motif" width="559" height="280" loading="lazy">
+                        <a href="assets/award-aimo3-certificate.jpeg" target="_blank" rel="noreferrer" aria-label="Open AI Mathematical Olympiad certificate">
+                            <img class="award-certificate" src="assets/award-aimo3-certificate.jpeg" alt="Kaggle certificate for AI Mathematical Olympiad - Progress Prize 3" width="1920" height="1184" loading="lazy">
                         </a>
                     </figure>
                     <div class="award-copy">
-                        <p class="project-meta">Data Science · Time Series · Sensor Signal Processing</p>
-                        <h3>NeurIPS - Ariel Data Challenge 2024 <span>Silver Medal · 56 / 1,151 · Top 4.8%</span></h3>
-                        <ul class="award-bullets">
-                            <li><strong>Skill:</strong> Time-series analysis, signal denoising, feature engineering, and statistical modeling for noisy physical measurements.</li>
-                            <li><strong>Action:</strong> Analyzed high-noise optical sensor time series, structured the data-cleaning and feature-extraction workflow, and developed regression predictions for astronomical observations.</li>
-                            <li><strong>Result:</strong> Earned the competition's silver medal, placing 56th of 1,151 teams (top 4.8%) in a NeurIPS-hosted challenge.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="award-entry">
-                    <figure class="award-thumb">
-                        <a href="https://www.kaggle.com/competitions/ai-mathematical-olympiad-progress-prize-3" target="_blank" rel="noreferrer" aria-label="View AI Mathematical Olympiad Progress Prize 3 on Kaggle">
-                            <img src="assets/award-aimo3.png" alt="AI Mathematical Olympiad Progress Prize 3 artwork" width="560" height="280" loading="lazy">
-                        </a>
-                    </figure>
-                    <div class="award-copy">
-                        <p class="project-meta">Large Language Models · Mathematical Reasoning · Tool Use</p>
+                        <p class="project-meta">Large Language Models · Mathematical Reasoning · Tool Use <span>Apr 16, 2026</span></p>
                         <h3>AI Mathematical Olympiad - Progress Prize 3 <span>Bronze Medal · 383 / 4,138 · Top 9.2%</span></h3>
                         <ul class="award-bullets">
-                            <li><strong>Skill:</strong> Multi-step mathematical reasoning, problem decomposition, LLM prompting, and programmatic verification with Python.</li>
-                            <li><strong>Action:</strong> Applied structured reasoning to competition mathematics problems and used code-assisted checks to validate calculations and intermediate results.</li>
-                            <li><strong>Result:</strong> Won a bronze medal in Progress Prize 3, ranking 383rd among 4,138 teams (top 9.2%).</li>
+                            <li><strong>Skill:</strong> Built a tool-integrated reasoning (TIR) pipeline on DeepSeek-Math and Qwen-Math with chain-of-thought prompting. It decomposed olympiad-level algebra and combinatorics problems into formal sub-tasks and used Python execution for symbolic and numeric steps.</li>
+                            <li><strong>Action:</strong> Added inference-time scaling with self-consistency sampling across multiple reasoning paths, majority voting, and a lightweight verifier to cross-check candidate answers. Inconsistent paths were filtered so number theory and geometry solutions converged more reliably.</li>
+                            <li><strong>Result:</strong> Tuned vLLM KV-cache allocation and dynamic batching for Kaggle's offline GPU and inference-time limits, increasing sampling branches within the time budget. Ranked 383rd among 4,138 teams (top 9.2%) and earned a bronze medal.</li>
                         </ul>
                     </div>
                 </article>
 
                 <article class="award-entry">
                     <figure class="award-thumb">
-                        <a href="https://www.kaggle.com/competitions/vesuvius-challenge-surface-detection" target="_blank" rel="noreferrer" aria-label="View Vesuvius Challenge Surface Detection on Kaggle">
-                            <img src="assets/award-vesuvius.jpg" alt="Grayscale X-ray CT surface texture from the Vesuvius Challenge artwork" width="560" height="280" loading="lazy">
+                        <a href="assets/award-vesuvius-certificate.jpeg" target="_blank" rel="noreferrer" aria-label="Open Vesuvius Challenge certificate">
+                            <img class="award-certificate" src="assets/award-vesuvius-certificate.jpeg" alt="Kaggle certificate for Vesuvius Challenge - Surface Detection" width="1920" height="1184" loading="lazy">
                         </a>
                     </figure>
                     <div class="award-copy">
-                        <p class="project-meta">Computer Vision · 3D Imaging · Volumetric Segmentation</p>
+                        <p class="project-meta">Computer Vision · 3D Imaging · Volumetric Segmentation <span>Feb 28, 2026</span></p>
                         <h3>Vesuvius Challenge - Surface Detection <span>Bronze Medal · 85 / 1,391 · Top 6.1%</span></h3>
                         <ul class="award-bullets">
-                            <li><strong>Skill:</strong> 3D computer vision, volumetric CT analysis, voxel-level segmentation, and spatial reasoning across image slices.</li>
-                            <li><strong>Action:</strong> Worked on identifying and segmenting the target surface in volumetric scans of ancient scrolls, preserving spatial continuity while translating slice-level evidence into a 3D surface prediction.</li>
-                            <li><strong>Result:</strong> Placed 85th of 1,391 teams (top 6.1%) and received a bronze medal in the Surface Detection challenge.</li>
+                            <li><strong>Skill:</strong> Trained 3D U-Net and 2.5D ResNet models for voxel-level semantic segmentation on high-resolution X-ray CT scans of carbonized scrolls, separating tightly compressed papyrus layers under low signal-to-noise conditions.</li>
+                            <li><strong>Action:</strong> Built a memory-efficient Zarr / NumPy sliding-window loader and augmentation pipeline with 3D affine transforms, local elastic deformation, and depth-axis normal-vector features to fit hundreds-of-GB volumes into limited GPU memory.</li>
+                            <li><strong>Result:</strong> Designed adaptive probability thresholding and topology-based smoothing, then fitted segmented voxels into continuous surfaces for mesh unwrapping. Placed 85th among 1,391 international teams (top 6.1%) and earned an official Kaggle bronze medal.</li>
                         </ul>
                     </div>
                 </article>
 
                 <article class="award-entry">
                     <figure class="award-thumb">
-                        <a href="https://www.kaggle.com/competitions/um-game-playing-strength-of-mcts-variants" target="_blank" rel="noreferrer" aria-label="View UM Game-Playing Strength of MCTS Variants on Kaggle">
-                            <img src="assets/award-mcts.png" alt="Game-board patterns from the MCTS Variants competition artwork" width="560" height="280" loading="lazy">
+                        <a href="assets/award-mcts-certificate.jpeg" target="_blank" rel="noreferrer" aria-label="Open UM Game-Playing Strength of MCTS Variants certificate">
+                            <img class="award-certificate" src="assets/award-mcts-certificate.jpeg" alt="Kaggle certificate for UM - Game-Playing Strength of MCTS Variants" width="1358" height="710" loading="lazy">
                         </a>
                     </figure>
                     <div class="award-copy">
-                        <p class="project-meta">Reinforcement Learning · Decision AI · Search Algorithms</p>
+                        <p class="project-meta">Reinforcement Learning · Decision AI · Search Algorithms <span>Dec 3, 2024</span></p>
                         <h3>UM - Game-Playing Strength of MCTS Variants <span>Bronze Medal · 119 / 1,608 · Top 7.4%</span></h3>
                         <ul class="award-bullets">
                             <li><strong>Skill:</strong> Monte Carlo Tree Search (MCTS), reinforcement learning concepts, game-state evaluation, and algorithmic decision-making.</li>
                             <li><strong>Action:</strong> Evaluated MCTS variants on game-playing tasks, using tree-search decisions and simulated outcomes to assess how effectively each approach selected moves.</li>
                             <li><strong>Result:</strong> Achieved 119th place among 1,608 teams (top 7.4%) and earned a bronze medal, demonstrating strength in search-based decision systems.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="award-entry">
+                    <figure class="award-thumb">
+                        <a href="assets/award-ariel-certificate.jpeg" target="_blank" rel="noreferrer" aria-label="Open NeurIPS Ariel Data Challenge certificate">
+                            <img class="award-certificate" src="assets/award-ariel-certificate.jpeg" alt="Kaggle certificate for NeurIPS - Ariel Data Challenge 2024" width="1358" height="744" loading="lazy">
+                        </a>
+                    </figure>
+                    <div class="award-copy">
+                        <p class="project-meta">Data Science · Time Series · Sensor Signal Processing <span>Nov 1, 2024</span></p>
+                        <h3>NeurIPS - Ariel Data Challenge 2024 <span>Silver Medal · 56 / 1,151 · Top 4.8%</span></h3>
+                        <ul class="award-bullets">
+                            <li><strong>Skill:</strong> Time-series analysis, signal denoising, feature engineering, and statistical modeling for noisy physical measurements.</li>
+                            <li><strong>Action:</strong> Analyzed high-noise optical sensor time series, structured the data-cleaning and feature-extraction workflow, and developed regression predictions for astronomical observations.</li>
+                            <li><strong>Result:</strong> Earned the competition's silver medal, placing 56th of 1,151 teams (top 4.8%) in a NeurIPS-hosted challenge.</li>
                         </ul>
                     </div>
                 </article>
