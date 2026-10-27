@@ -537,47 +537,37 @@ canvas {
     min-width: 0;
 }
 
-.award-heading-row {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: start;
-    gap: 12px;
-}
-
-.resource-links {
+.project-meta-row {
     display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 10px;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px;
 }
 
-.resource-link {
+.project-meta-row .project-meta {
+    min-width: 0;
+    flex: 1 1 auto;
+}
+
+.project-meta-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 30px;
-    padding: 4px 13px;
-    border: 1px solid #e1e1e4;
-    border-radius: 7px;
-    background: #e9e9eb;
-    color: #303136;
+    flex: 0 0 auto;
+    padding: 1px 0 2px 8px;
+    color: var(--muted);
     font-size: 12px;
     font-weight: 650;
     line-height: 1.4;
     text-decoration: none;
-    transition: transform 180ms ease, background-color 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    white-space: nowrap;
+    transition: color 180ms ease, transform 180ms ease;
 }
 
-.resource-link:hover,
-.resource-link:focus-visible {
+.project-meta-link:hover,
+.project-meta-link:focus-visible {
+    color: var(--blue);
     transform: translateY(-2px);
-    border-color: #cbd8ff;
-    background: #dfe8ff;
-    box-shadow: 0 5px 12px rgb(47 86 180 / 15%);
-}
-
-.resource-link:active {
-    transform: translateY(0);
 }
 
 .award-entry h3 {
@@ -594,25 +584,6 @@ canvas {
     color: var(--muted);
     font-size: 12px;
     font-weight: 600;
-}
-
-.award-repo-link {
-    align-self: start;
-    margin: 0;
-    padding: 2px 0 2px 8px;
-    color: var(--muted);
-    font-size: 12px;
-    font-weight: 650;
-    line-height: 1.4;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: color 180ms ease, transform 180ms ease;
-}
-
-.award-repo-link:hover,
-.award-repo-link:focus-visible {
-    color: var(--blue);
-    transform: translateY(-2px);
 }
 
 .award-bullets {
@@ -827,14 +798,12 @@ canvas {
         font-size: 11px;
     }
 
-    .resource-links {
-        gap: 6px;
-        margin-top: 7px;
+    .project-meta-row {
+        gap: 8px;
     }
 
-    .resource-link {
-        min-height: 26px;
-        padding: 3px 10px;
+    .project-meta-link {
+        padding-left: 4px;
         font-size: 10.5px;
     }
 
