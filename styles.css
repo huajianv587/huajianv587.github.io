@@ -537,8 +537,44 @@ canvas {
     min-width: 0;
 }
 
+.resource-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.resource-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30px;
+    padding: 4px 13px;
+    border: 1px solid #e1e1e4;
+    border-radius: 7px;
+    background: #e9e9eb;
+    color: #303136;
+    font-size: 12px;
+    font-weight: 650;
+    line-height: 1.4;
+    text-decoration: none;
+    transition: transform 180ms ease, background-color 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.resource-link:hover,
+.resource-link:focus-visible {
+    transform: translateY(-2px);
+    border-color: #cbd8ff;
+    background: #dfe8ff;
+    box-shadow: 0 5px 12px rgb(47 86 180 / 15%);
+}
+
+.resource-link:active {
+    transform: translateY(0);
+}
+
 .award-repo-link {
-    margin: 2px 0 8px;
+    margin: 0;
 }
 
 .award-entry h3 {
@@ -767,6 +803,17 @@ canvas {
         margin-top: 6px;
         padding-inline: 7px;
         font-size: 11px;
+    }
+
+    .resource-links {
+        gap: 6px;
+        margin-top: 7px;
+    }
+
+    .resource-link {
+        min-height: 26px;
+        padding: 3px 10px;
+        font-size: 10.5px;
     }
 
     .timeline-list {
