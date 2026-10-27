@@ -537,6 +537,13 @@ canvas {
     min-width: 0;
 }
 
+.award-heading-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+    gap: 12px;
+}
+
 .resource-links {
     display: flex;
     flex-wrap: wrap;
@@ -573,10 +580,6 @@ canvas {
     transform: translateY(0);
 }
 
-.award-repo-link {
-    margin: 0;
-}
-
 .award-entry h3 {
     margin: 0 0 7px;
     color: #242529;
@@ -591,6 +594,25 @@ canvas {
     color: var(--muted);
     font-size: 12px;
     font-weight: 600;
+}
+
+.award-repo-link {
+    align-self: start;
+    margin: 0;
+    padding: 2px 0 2px 8px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 650;
+    line-height: 1.4;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 180ms ease, transform 180ms ease;
+}
+
+.award-repo-link:hover,
+.award-repo-link:focus-visible {
+    color: var(--blue);
+    transform: translateY(-2px);
 }
 
 .award-bullets {
