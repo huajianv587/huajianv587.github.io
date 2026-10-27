@@ -20,6 +20,7 @@ Then visit `http://127.0.0.1:4173`.
 - `assets/profile-photo.jpg` - optimized profile portrait provided by the owner
 - `assets/symface-project-board.png` - SymFace AR and biometric AI project overview illustration
 - `assets/symface-project-portrait.png` - SymFace biometric analysis visualization used in the self-project entry
+- `assets/symface-architecture.png` - SymFace system architecture illustration used in the self-project entry
 - `assets/quant-platform.jpg` - project dashboard screenshot
 - `assets/huafeng-logo-dark.png` - Huafon Group logo sourced from its official website
 - `assets/huafeng-logo-en.png` - English wordmark cropped from the bilingual Huafon logo
