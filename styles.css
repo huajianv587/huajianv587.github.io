@@ -280,6 +280,12 @@ canvas {
     object-fit: cover;
 }
 
+.project-thumb img.project-illustration {
+    object-fit: contain;
+    object-position: center;
+    background: #f1f5f9;
+}
+
 .research-illustration {
     object-fit: contain !important;
     object-position: center;
@@ -481,42 +487,49 @@ canvas {
 }
 
 .award-thumb {
+    display: grid;
+    width: 100%;
+    gap: 8px;
+    margin: 3px 0 0;
+    overflow: visible;
+}
+
+.award-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     aspect-ratio: 2 / 1;
-    margin: 3px 0 0;
     overflow: hidden;
     border: 1px solid #e9e9eb;
     border-radius: 5px;
     background: #f3f4f6;
 }
 
-.award-thumb a,
-.award-thumb img {
+.award-visual img {
     display: block;
     width: 100%;
     height: 100%;
+    object-position: center;
 }
 
-.award-thumb a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.award-thumb img {
+.award-official img {
     object-fit: cover;
     transition: transform 240ms ease;
 }
 
-.award-thumb img.award-certificate {
+.award-certificate-link img {
+    transition: transform 240ms ease;
+}
+
+.award-visual img.award-certificate {
     object-fit: contain;
-    object-position: center;
     padding: 3px;
     background: #ffffff;
 }
 
-.award-thumb a:hover img,
-.award-thumb a:focus-visible img {
+.award-visual:hover img,
+.award-visual:focus-visible img {
     transform: scale(1.04);
 }
 
@@ -888,7 +901,7 @@ canvas {
         transform: none;
     }
 
-    .award-thumb img {
+    .award-visual img {
         transition: none;
     }
 }
