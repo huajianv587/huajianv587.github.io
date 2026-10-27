@@ -537,6 +537,10 @@ canvas {
     min-width: 0;
 }
 
+.award-repo-link {
+    margin: 2px 0 8px;
+}
+
 .award-entry h3 {
     margin: 0 0 7px;
     color: #242529;
