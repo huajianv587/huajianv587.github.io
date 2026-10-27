@@ -33,9 +33,9 @@
                 </div>
             </div>
 
-            <h2 class="bio-heading">About</h2>
-            <p class="bio-copy">I hold a Master of Computing in Applied Artificial Intelligence from Nanyang Technological University, having graduated in October 2026. I came to AI after 5+ years in data analytics and international trade, where I worked with real suppliers, contracts, and customs workflows and learned what production data and real operations look like. My work includes a multi-agent RAG system for ESG research and an LLM-driven clinical workflow pipeline, spanning speech-to-text and medical consultation, built during an industry internship.</p>
-            <p class="bio-copy">I focus on the engineering that makes AI trustworthy in practice: traceable data lineage, failure handling, reproducible evaluation, and a clear line between a working prototype and a production-ready system. I also hold the CFA Institute ESG Investing Certificate and am particularly interested in AI for finance and sustainability.</p>
+            <h2 class="bio-heading">Short Bio</h2>
+            <p class="bio-copy">I am an AI algorithm and agent development engineer with a Master of Computing in Applied Artificial Intelligence from Nanyang Technological University, completed in October 2026. Before moving into AI, I spent more than five years in data analytics, supply chain, and international trade, working with suppliers, contracts, customs documentation, and operational data. That background shapes how I approach technical work: I start from the business process and data constraints, then build systems that can be evaluated and maintained.</p>
+            <p class="bio-copy">I work with Python, SQL, PyTorch, Hugging Face, FastAPI, and Docker, with recent work spanning document retrieval, multimodal and agent systems, and AI-assisted workflows. My projects include the ESG-DocQA retrieval benchmark, the SymFace AR and biometric prototype, and an LLM-driven clinical workflow pipeline. I am comfortable working across technical and non-technical teams, documenting assumptions, communicating trade-offs, and turning ambiguous requirements into structured, testable implementations. I also hold the CFA Institute ESG Investing Certificate and am interested in AI applications for finance and sustainability.</p>
         </section>
 
         <section class="content-section" id="experience" aria-labelledby="experience-title">
@@ -81,7 +81,7 @@
             <div class="section-heading">
                 <div>
                     <p class="section-kicker">Built systems</p>
-                    <h2 id="work-title">Project</h2>
+                    <h2 id="work-title">Self Project</h2>
                 </div>
                 <a class="section-link" href="https://github.com/huajianv587" target="_blank" rel="noreferrer">View all on GitHub <span aria-hidden="true">&#8594;</span></a>
             </div>
@@ -89,7 +89,7 @@
             <div class="project-list">
                 <article class="project-entry project-featured project-spotlight">
                     <figure class="project-thumb">
-                        <img class="project-illustration" src="assets/symface-project-board.png" alt="SymFace AR and biometric AI app overview showing facial landmarks, wellness context, biometric analysis, and on-device AI workflow" width="2172" height="724" loading="lazy">
+                        <img class="project-illustration" src="assets/symface-project-portrait.png" alt="SymFace biometric analysis visualization showing a 3D facial mesh, facial landmarks, wellness insights, and biometric analysis" width="1586" height="1106" loading="lazy">
                     </figure>
                     <div class="project-copy">
                         <p class="project-meta">Flagship project <span>NTU Pinnacle finalist</span></p>
@@ -143,9 +143,9 @@
                         <p class="project-meta">Large Language Models · Mathematical Reasoning · Tool Use <span>Apr 16, 2026</span></p>
                         <h3>AI Mathematical Olympiad - Progress Prize 3 <span>Bronze Medal · 383 / 4,138 · Top 9.2%</span></h3>
                         <ul class="award-bullets">
-                            <li><strong>Skill:</strong> Built a tool-integrated reasoning (TIR) pipeline on DeepSeek-Math and Qwen-Math with chain-of-thought prompting. It decomposed olympiad-level algebra and combinatorics problems into formal sub-tasks and used Python execution for symbolic and numeric steps.</li>
-                            <li><strong>Action:</strong> Added inference-time scaling with self-consistency sampling across multiple reasoning paths, majority voting, and a lightweight verifier to cross-check candidate answers. Inconsistent paths were filtered so number theory and geometry solutions converged more reliably.</li>
-                            <li><strong>Result:</strong> Tuned vLLM KV-cache allocation and dynamic batching for Kaggle's offline GPU and inference-time limits, increasing sampling branches within the time budget. Ranked 383rd among 4,138 teams (top 9.2%) and earned a bronze medal.</li>
+                            <li>Built a tool-integrated reasoning (TIR) pipeline on DeepSeek-Math and Qwen-Math with chain-of-thought prompting. It splits olympiad-level algebra and combinatorics problems into formal sub-tasks, has the model write Python for each one, and runs the code in a solver. Symbolic and numeric steps are now computed by code instead of generated token by token, which removed arithmetic errors from multi-step derivations.</li>
+                            <li>Added inference-time scaling with self-consistency sampling across multiple reasoning paths, majority voting, and a lightweight verifier that cross-checks candidate answers. Inconsistent solution paths are filtered out, so answers on number theory and geometry problems, where one wrong step invalidates the whole solution, converge more reliably.</li>
+                            <li>Tuned vLLM KV cache memory allocation and dynamic batching to fit Kaggle's offline GPU and inference-timeout limits, which increased the number of sampling branches per problem within the time budget. The final system ranked 383rd among 4,138 teams (top 9.2%) and earned a bronze medal.</li>
                         </ul>
                     </div>
                 </article>
@@ -163,9 +163,9 @@
                         <p class="project-meta">Computer Vision · 3D Imaging · Volumetric Segmentation <span>Feb 28, 2026</span></p>
                         <h3>Vesuvius Challenge - Surface Detection <span>Bronze Medal · 85 / 1,391 · Top 6.1%</span></h3>
                         <ul class="award-bullets">
-                            <li><strong>Skill:</strong> Trained 3D U-Net and 2.5D ResNet models for voxel-level semantic segmentation on high-resolution X-ray CT scans of carbonized scrolls, separating tightly compressed papyrus layers under low signal-to-noise conditions.</li>
-                            <li><strong>Action:</strong> Built a memory-efficient Zarr / NumPy sliding-window loader and augmentation pipeline with 3D affine transforms, local elastic deformation, and depth-axis normal-vector features to fit hundreds-of-GB volumes into limited GPU memory.</li>
-                            <li><strong>Result:</strong> Designed adaptive probability thresholding and topology-based smoothing, then fitted segmented voxels into continuous surfaces for mesh unwrapping. Placed 85th among 1,391 international teams (top 6.1%) and earned an official Kaggle bronze medal.</li>
+                            <li>Trained 3D U-Net and 2.5D ResNet models for voxel-level semantic segmentation on high-resolution X-ray CT scans of carbonized scrolls. The models separate sub-millimeter, tightly compressed papyrus layers despite very low signal-to-noise and noise shared between adjacent layers, which reduced layer-boundary merging and mis-segmentation.</li>
+                            <li>Built a memory-efficient Zarr / NumPy sliding-window loader and augmentation pipeline (3D random affine transforms, local elastic deformation, depth-axis normal-vector features) to fit volumes of hundreds of GB into limited GPU memory. This removed the memory bottleneck and improved generalization to scroll creases, fiber breaks, and other non-rigid deformations.</li>
+                            <li>Designed adaptive probability thresholding and topology-based smoothing over 3D connected components, then fitted the segmented voxels into continuous surfaces for mesh unwrapping. The final submission placed 85th among 1,391 international teams (top 6.1%) and earned an official Kaggle bronze medal.</li>
                         </ul>
                     </div>
                 </article>
