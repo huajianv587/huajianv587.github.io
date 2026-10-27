@@ -290,6 +290,7 @@ canvas {
     object-fit: contain !important;
     object-position: center;
     background: #f1f5f9;
+    cursor: zoom-in;
 }
 
 .project-copy {
@@ -522,6 +523,10 @@ canvas {
     transition: transform 240ms ease;
 }
 
+.award-certificate-link {
+    cursor: zoom-in;
+}
+
 .award-visual img.award-certificate {
     object-fit: contain;
     padding: 3px;
@@ -622,6 +627,44 @@ canvas {
 
 .site-footer a {
     color: var(--muted);
+}
+
+.image-lightbox {
+    position: fixed;
+    z-index: 100;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background: rgb(21 24 31 / 76%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 180ms ease;
+}
+
+.image-lightbox[hidden] {
+    display: none;
+}
+
+.image-lightbox.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.image-lightbox img {
+    display: block;
+    max-width: min(94vw, 1440px);
+    max-height: 92vh;
+    width: auto;
+    height: auto;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: 0 18px 60px rgb(0 0 0 / 35%);
+    cursor: zoom-out;
+}
+
+body.lightbox-open {
+    overflow: hidden;
 }
 
 @media (max-width: 720px) {
@@ -944,6 +987,10 @@ canvas {
     }
 
     .award-visual img {
+        transition: none;
+    }
+
+    .image-lightbox {
         transition: none;
     }
 }

@@ -28,7 +28,7 @@ Then visit `http://127.0.0.1:4173`.
 - `assets/esg-docqa-architecture.svg` - research workflow illustration for ESG-DocQA
 - `assets/esg-docqa-retrieval-pipeline.png` - report retrieval methodology illustration for ESG-DocQA
 - `assets/award-ariel.jpg`, `assets/award-aimo3.png`, `assets/award-vesuvius.jpg`, `assets/award-mcts.png` - competition artwork used in the award entries
-- `assets/award-aimo3-certificate.jpeg`, `assets/award-vesuvius-certificate.jpeg`, `assets/award-mcts-certificate.jpeg`, `assets/award-ariel-certificate.jpeg` - certificate images shown in the algorithm award entries and opened at full size on click
+- `assets/award-aimo3-certificate.jpeg`, `assets/award-vesuvius-certificate.jpeg`, `assets/award-mcts-certificate.jpeg`, `assets/award-ariel-certificate.jpeg` - certificate images shown in the algorithm award entries and enlarged in an in-page lightbox on click
 
 ## GitHub Pages
 
