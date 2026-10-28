@@ -291,6 +291,28 @@ canvas {
     aspect-ratio: 5 / 8;
 }
 
+.project-thumb-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    aspect-ratio: auto !important;
+    overflow: visible;
+    background: transparent;
+}
+
+.project-thumb-stack .project-visual-link {
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #f1f5f9;
+    cursor: zoom-in;
+}
+
+.project-thumb-stack .project-illustration {
+    width: 100%;
+    height: auto;
+}
+
 .research-illustration {
     object-fit: contain !important;
     object-position: center;

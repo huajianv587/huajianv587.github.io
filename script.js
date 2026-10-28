@@ -368,7 +368,7 @@ function openLightbox(image) {
 }
 
 const lightboxTriggers = [
-    ...document.querySelectorAll(".project-illustration"),
+    ...document.querySelectorAll(".project-visual-link"),
     ...document.querySelectorAll(".research-illustration"),
     ...document.querySelectorAll(".award-certificate-link")
 ];
