@@ -25,6 +25,7 @@ Then visit `http://127.0.0.1:4173`.
 - `assets/huafeng-logo-dark.png` - Huafon Group logo sourced from its official website
 - `assets/huafeng-logo-en.png` - English wordmark cropped from the bilingual Huafon logo
 - `assets/niulanda-logo.webp` - Wenzhou Niulanda Machinery Technology logo sourced from its official website
+- `assets/transnote-logo.svg` - compact Transnote AI wordmark used for the internship entry
 - `assets/esg-docqa-architecture.svg` - research workflow illustration for ESG-DocQA
 - `assets/esg-docqa-retrieval-pipeline.png` - report retrieval methodology illustration for ESG-DocQA
 - `assets/award-ariel.jpg`, `assets/award-aimo3.png`, `assets/award-vesuvius.jpg`, `assets/award-mcts.png` - competition artwork used in the award entries

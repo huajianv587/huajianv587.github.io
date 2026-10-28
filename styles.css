@@ -455,6 +455,26 @@ canvas {
     min-width: 0;
 }
 
+.timeline-heading-row {
+    position: relative;
+}
+
+.timeline-heading-row h3 {
+    padding-right: 132px;
+}
+
+.timeline-location {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    margin: 0;
+    color: var(--muted);
+    font-size: 11px;
+    font-weight: 650;
+    line-height: 1.45;
+    white-space: nowrap;
+}
+
 .timeline-main > p,
 .education-list article > p:last-child {
     margin: 0;
@@ -914,6 +934,14 @@ body.lightbox-open {
 
     .timeline-entry h3 {
         font-size: 14px;
+    }
+
+    .timeline-heading-row h3 {
+        padding-right: 112px;
+    }
+
+    .timeline-location {
+        font-size: 10px;
     }
 
     .timeline-main > p,
