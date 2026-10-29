@@ -9,9 +9,9 @@
     <meta property="og:description" content="Selected AI systems, research, and projects by Huajian Jiang.">
     <meta property="og:type" content="website">
     <title>Huajian Jiang | AI Algorithm &amp; Agent Development Engineer</title>
-    <link rel="icon" href="assets/profile-photo.jpg" type="image/jpeg">
-    <link rel="stylesheet" href="styles.css?v=20261028-1">
-    <script src="script.js?v=20261028-1" defer></script>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=20261029-1">
+    <script src="script.js?v=20261029-1" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -28,7 +28,6 @@
                     <div class="profile-links" aria-label="Professional links">
                         <a href="https://www.linkedin.com/in/huajianjiang/" target="_blank" rel="noreferrer">LinkedIn</a>
                         <a href="https://github.com/huajianv587" target="_blank" rel="noreferrer">GitHub</a>
-                        <a href="https://huajianv587.github.io/" target="_blank" rel="noreferrer">Personal Website</a>
                     </div>
                 </div>
             </div>
@@ -36,6 +35,14 @@
             <h2 class="bio-heading">Short Bio</h2>
             <p class="bio-copy">I am an AI engineer focused on algorithms and agent systems, holding a Master of Computing in Applied Artificial Intelligence from Nanyang Technological University (completed October 2026).</p>
             <p class="bio-copy">Before specializing in AI engineering, I spent over five years working in data analytics and cross-border supply chain operations. Working with complex business workflows and operational data shaped my engineering approach: I start from real-world requirements and data constraints to build AI systems that are measurable, reliable, and maintainable.</p>
+            <div class="tech-stack" aria-labelledby="tech-stack-title">
+                <h3 id="tech-stack-title">Core Tech Stack</h3>
+                <ul class="tech-stack-list">
+                    <li><span>LLMs &amp; Agents</span> PyTorch · Hugging Face · vLLM · SFT/LoRA · Hybrid RAG · Evaluation Harness</li>
+                    <li><span>Vision &amp; ML</span> nnUNet · CatBoost/LightGBM · Time-Series Signal Recovery · Multimodal AI</li>
+                    <li><span>Engineering &amp; Data</span> Python · SQL · FastAPI · Docker · SwiftUI · ARKit</li>
+                </ul>
+            </div>
         </section>
 
         <section class="content-section" id="experience" aria-labelledby="experience-title">
@@ -106,7 +113,7 @@
             <div class="section-heading">
                 <div>
                     <p class="section-kicker">Built systems</p>
-                    <h2 id="work-title">Project</h2>
+                    <h2 id="work-title">Selected Projects</h2>
                 </div>
                 <a class="section-link" href="https://github.com/huajianv587" target="_blank" rel="noreferrer">View on GitHub <span aria-hidden="true">&#8594;</span></a>
             </div>
@@ -161,6 +168,11 @@
                         </div>
                         <h3>ESG-DocQA: A Human-Reviewed Benchmark and Controlled Retrieval Evaluation</h3>
                         <p>A benchmark and evaluation study of long-context retrieval for complex financial disclosures, combining human review with controlled evidence comparisons.</p>
+                        <ul class="project-bullets research-bullets">
+                            <li>Constructed a human-reviewed benchmark with report-local candidate pools, question-only queries, and page-level evidence annotations for controlled retrieval evaluation.</li>
+                            <li>Compared sparse, dense, and hybrid retrieval under fixed conditions, using gold-page ranking and retrieval metrics to separate retrieval quality from downstream answer generation.</li>
+                        </ul>
+                        <p class="project-stack">Long-Context RAG · Hybrid Retrieval · Financial NLP · Benchmark Construction</p>
                         <p class="publication-status">Accepted for publication in IJDAR, a Springer journal indexed in SCIE.</p>
                     </div>
                 </article>
@@ -170,6 +182,7 @@
 
         <section class="content-section awards-section" id="awards" aria-labelledby="awards-title">
             <h2 id="awards-title">Algorithm Awards</h2>
+            <p class="awards-summary">4× Kaggle Medalist · 1 Silver, 3 Bronze · Top 4.8–9.2% across LLM reasoning, 3D vision, reinforcement learning, and scientific machine learning.</p>
             <div class="awards-list">
                 <article class="award-entry">
                     <figure class="award-thumb">
@@ -237,7 +250,7 @@
                     </div>
                 </article>
 
-                <article class="award-entry">
+                <article class="award-entry award-highlight">
                     <figure class="award-thumb">
                         <a class="award-visual award-official" href="https://www.kaggle.com/competitions/ariel-data-challenge-2024" target="_blank" rel="noreferrer" aria-label="View NeurIPS Ariel Data Challenge 2024 official competition page">
                             <img src="assets/award-ariel.jpg" alt="Official competition artwork for NeurIPS - Ariel Data Challenge 2024" width="559" height="280" loading="lazy">
@@ -255,6 +268,7 @@
                         </ul>
                     </div>
                 </article>
+
             </div>
         </section>
 
