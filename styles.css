@@ -305,6 +305,10 @@ canvas {
     background: #edf0f1;
 }
 
+.research-thumb {
+    aspect-ratio: 3 / 4;
+}
+
 .project-thumb img,
 .project-thumb canvas {
     width: 100%;
