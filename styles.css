@@ -108,9 +108,9 @@ canvas {
 }
 
 .profile-info h1 span {
-    color: #4b4d52;
-    font-size: 0.72em;
-    font-weight: 550;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 .profile-role,
@@ -853,8 +853,8 @@ body.lightbox-open {
     }
 
     .profile-info h1 span {
-        display: inline-block;
-        font-size: 0.7em;
+        display: inline;
+        font-size: inherit;
     }
 
     .profile-role,
