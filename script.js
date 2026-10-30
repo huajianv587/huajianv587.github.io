@@ -319,6 +319,9 @@ function paintVisual(canvas) {
 const canvases = [...document.querySelectorAll("canvas[data-visual]")];
 let resizeFrame = 0;
 
+const currentYear = document.querySelector("#current-year");
+if (currentYear) currentYear.textContent = String(new Date().getFullYear());
+
 function paintAll() {
     cancelAnimationFrame(resizeFrame);
     resizeFrame = requestAnimationFrame(() => canvases.forEach(paintVisual));
